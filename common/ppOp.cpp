@@ -34,6 +34,7 @@
 #include "vpu_mem.h"
 #include "ppOp.h"
 #include "reg.h"
+#include <stdlib.h>
 #ifdef AVS40
 #undef ALOGV
 #define ALOGV LOGV

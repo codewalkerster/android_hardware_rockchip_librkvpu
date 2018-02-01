@@ -47,9 +47,11 @@ LOCAL_SHARED_LIBRARIES :=       \
         libcutils               \
         libui                   \
         libdl                   \
-        libstagefright_foundation
+        libstagefright_foundation \
+	liblog                    \
 
 LOCAL_MODULE := libstagefrighthw
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE_OWNER := rockchip,intel
 

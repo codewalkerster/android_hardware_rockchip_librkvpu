@@ -555,6 +555,18 @@ RK_S32 VPUMallocLinear(VPUMemLinear_t *p, RK_U32 size)
     return err;
 }
 
+RK_S32 VPUMemClose()
+{
+    struct vpu_dmabuf_dev *dev = vpm_dmabuf.dev;
+    if(NULL == dev){
+        VPM_DEBUG("%s:%d vpu_dmabuf_dev already closed");
+        return -1;
+    }else{
+        return vpu_dmabuf_close(dev);
+    }
+}
+
+
 RK_S32 VPUFreeLinear(VPUMemLinear_t *p)
 {
     VPU_MEM_TEST;

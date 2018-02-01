@@ -18,7 +18,8 @@ LOCAL_SRC_FILES := \
 	vpu_mem_observer.c
 
 LOCAL_SHARED_LIBRARIES := \
-	libcutils
+	libcutils \
+	liblog    \
 
 LOCAL_MODULE := vpu_mem_observer
 LOCAL_MODULE_TAGS := optional tests
